@@ -1,6 +1,7 @@
 #  Products App - Backend
 
 Este es el backend de **Products App**, una aplicación web CRUD para gestionar productos. Está desarrollada con **Spring Boot** y utiliza **PostgreSQL** como base de datos.
+**En la carpeta resources se encuentra el documento con las pruebas no funcionales** 
 
 ---
 
