@@ -1,4 +1,4 @@
-package org.esteban.springboot.springmvc.app.springbootbackend.services;
+package org.esteban.springboot.springmvc.app.springbootbackend.services.Product;
 
 import org.esteban.springboot.springmvc.app.springbootbackend.entities.Product;
 import org.esteban.springboot.springmvc.app.springbootbackend.repositories.ProductRepository;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 @Service
 
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
     final private ProductRepository productRepository;
 
     public ProductServiceImpl(ProductRepository productRepository) {

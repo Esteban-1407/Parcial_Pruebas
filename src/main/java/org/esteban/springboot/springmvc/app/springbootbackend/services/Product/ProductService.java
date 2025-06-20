@@ -1,4 +1,4 @@
-package org.esteban.springboot.springmvc.app.springbootbackend.services;
+package org.esteban.springboot.springmvc.app.springbootbackend.services.Product;
 
 import org.esteban.springboot.springmvc.app.springbootbackend.entities.Product;
 

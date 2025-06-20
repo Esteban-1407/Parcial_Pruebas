@@ -1,7 +1,7 @@
 package org.esteban.springboot.springmvc.app.springbootbackend.controllers;
 
 import org.esteban.springboot.springmvc.app.springbootbackend.entities.Product;
-import org.esteban.springboot.springmvc.app.springbootbackend.services.ProductService;
+import org.esteban.springboot.springmvc.app.springbootbackend.services.Product.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -41,9 +41,9 @@ public class ProductController {
         Optional<Product> optionalProduct = productService.findById(id);
         if(optionalProduct.isPresent()){
             Product updatedProduct = optionalProduct.orElseThrow();
-            updatedProduct.setName(product.getName());
-            updatedProduct.setDescription(product.getDescription());
-            updatedProduct.setPrice(product.getPrice());
+            updatedProduct.setNombre(product.getNombre());
+            updatedProduct.setDescripcion(product.getDescripcion());
+            updatedProduct.setPrecio(product.getPrecio());
             return ResponseEntity.status(HttpStatus.CREATED).body(productService.save(updatedProduct));
         }
         return ResponseEntity.notFound().build();
